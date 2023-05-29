@@ -870,7 +870,7 @@ RSpec/Capybara:
   Include: *1
   Language: *2
 
-RSpec/Capybara/CurrentPathExpectation:
+Capybara/CurrentPathExpectation:
   Description: Checks that no expectations are set on Capybara's `current_path`.
   Enabled: true
   VersionAdded: '1.18'
@@ -885,13 +885,13 @@ RSpec/Capybara/FeatureMethods:
   VersionChanged: '2.0'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/FeatureMethods
 
-RSpec/Capybara/MatchStyle:
+Capybara/MatchStyle:
   Description: Checks for usage of deprecated style methods.
   Enabled: pending
   VersionAdded: '2.17'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/MatchStyle
 
-RSpec/Capybara/NegationMatcher:
+Capybara/NegationMatcher:
   Description: Enforces use of `have_no_*` or `not_to` for negated expectations.
   Enabled: pending
   VersionAdded: '2.14'
@@ -901,25 +901,25 @@ RSpec/Capybara/NegationMatcher:
     - not_to
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/NegationMatcher
 
-RSpec/Capybara/SpecificActions:
+Capybara/SpecificActions:
   Description: Checks for there is a more specific actions offered by Capybara.
   Enabled: pending
   VersionAdded: '2.14'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/SpecificActions
 
-RSpec/Capybara/SpecificFinders:
+Capybara/SpecificFinders:
   Description: Checks if there is a more specific finder offered by Capybara.
   Enabled: pending
   VersionAdded: '2.13'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/SpecificFinders
 
-RSpec/Capybara/SpecificMatcher:
+Capybara/SpecificMatcher:
   Description: Checks for there is a more specific matcher offered by Capybara.
   Enabled: pending
   VersionAdded: '2.12'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/SpecificMatcher
 
-RSpec/Capybara/VisibilityMatcher:
+Capybara/VisibilityMatcher:
   Description: Checks for boolean visibility in Capybara finders.
   Enabled: true
   VersionAdded: '1.39'
@@ -931,7 +931,7 @@ RSpec/FactoryBot:
   Include: *1
   Language: *2
 
-RSpec/FactoryBot/AttributeDefinedStatically:
+FactoryBot/AttributeDefinedStatically:
   Description: Always declare attribute values as blocks.
   Enabled: true
   Include:
@@ -942,7 +942,7 @@ RSpec/FactoryBot/AttributeDefinedStatically:
   VersionChanged: '2.0'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/AttributeDefinedStatically
 
-RSpec/FactoryBot/ConsistentParenthesesStyle:
+FactoryBot/ConsistentParenthesesStyle:
   Description: Use a consistent style for parentheses in factory bot calls.
   Enabled: pending
   EnforcedStyle: require_parentheses
@@ -952,7 +952,7 @@ RSpec/FactoryBot/ConsistentParenthesesStyle:
   VersionAdded: '2.14'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/ConsistentParenthesesStyle
 
-RSpec/FactoryBot/CreateList:
+FactoryBot/CreateList:
   Description: Checks for create_list usage.
   Enabled: true
   Include:
@@ -969,7 +969,7 @@ RSpec/FactoryBot/CreateList:
   VersionChanged: '2.0'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/CreateList
 
-RSpec/FactoryBot/FactoryClassName:
+FactoryBot/FactoryClassName:
   Description: Use string value when setting the class attribute explicitly.
   Enabled: true
   Include:
@@ -980,7 +980,7 @@ RSpec/FactoryBot/FactoryClassName:
   VersionChanged: '2.0'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/FactoryClassName
 
-RSpec/FactoryBot/FactoryNameStyle:
+FactoryBot/FactoryNameStyle:
   Description: Checks for name style for argument of FactoryBot::Syntax::Methods.
   Enabled: pending
   VersionAdded: '2.16'
@@ -990,7 +990,7 @@ RSpec/FactoryBot/FactoryNameStyle:
     - string
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/FactoryNameStyle
 
-RSpec/FactoryBot/SyntaxMethods:
+FactoryBot/SyntaxMethods:
   Description: Use shorthands from `FactoryBot::Syntax::Methods` in your specs.
   Enabled: pending
   SafeAutoCorrect: false

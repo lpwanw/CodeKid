@@ -3111,6 +3111,7 @@ Style/Documentation:
     - 'app/mailers/application_mailer.rb'
     - 'app/helpers/application_helper.rb'
     - 'config/application.rb'
+    - 'db/**/*'
 
 Style/DoubleCopDisableDirective:
   Description: 'Checks for double rubocop:disable comments on a single line.'

@@ -4,12 +4,22 @@
 inherit_from:
   - .rubocop_enable.yml
   - .rubocop_disable.yml
+  - .rubocop_performance_enable.yml
+  - .rubocop_performance_disable.yml
+  - .rubocop_rails.yml
+  - .rubocop_rails_enable.yml
+  - .rubocop_rails_disable.yml
   - .rubocop_rake.yml
+  - .rubocop_rspec_enable.yml
+  - .rubocop_rspec_disable.yml
+
 
 require:
   - rubocop-capybara
+  - rubocop-performance
   - rubocop-rails
   - rubocop-rake
+  - rubocop-rspec
 
 AllCops:
   RubyInterpreters:
