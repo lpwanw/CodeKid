@@ -17,13 +17,15 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV.fetch("DATABASE_USERNAME") { "lpwanw" } %>
+  password: <%= ENV.fetch("DATABASE_PASSWORD") { "123456" } %>
+  database: <%= ENV.fetch("DATABASE_NAME") { "database" } %>
+  host: <%= ENV.fetch("DATABASE_HOST") { "localhost" } %>
 
 development:
   <<: *default
-  database: ananas_clone_development
+  database: <%= ENV.fetch("DATABASE_NAME") { "database_development" } %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: ananas_clone_production
-  username: ananas_clone
-  password: <%= ENV["ANANAS_CLONE_DATABASE_PASSWORD"] %>
+  database: <%= ENV.fetch("DATABASE_NAME") { "database" } %>
