@@ -25,6 +25,7 @@ group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
   gem "factory_bot_rails"
   gem "ffaker"
+  gem "pry"
   gem "rspec-rails", "~> 6.0.0"
   gem "rubocop", "~> 1.51", require: false
   gem "rubocop-capybara", require: false
