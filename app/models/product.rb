@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class Product < ApplicationRecord
   has_many :product_inventories, dependent: :destroy
 
   enum category: {
     accessories: "accessories",
     shoes: "shoes",
-    top: "top",
+    top: "top"
   }
 
   validates :name, presence: true

@@ -477,7 +477,7 @@ RSpec/ImplicitExpect:
 RSpec/ImplicitSubject:
   Description: Checks for usage of implicit subject (`is_expected` / `should`).
   Enabled: true
-  EnforcedStyle: single_line_only
+  EnforcedStyle: single_statement_only
   SupportedStyles:
     - single_line_only
     - single_statement_only
@@ -945,7 +945,7 @@ FactoryBot/AttributeDefinedStatically:
 FactoryBot/ConsistentParenthesesStyle:
   Description: Use a consistent style for parentheses in factory bot calls.
   Enabled: pending
-  EnforcedStyle: require_parentheses
+  EnforcedStyle: omit_parentheses
   SupportedStyles:
     - require_parentheses
     - omit_parentheses

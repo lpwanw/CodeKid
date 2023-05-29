@@ -1,6 +1,8 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
-RSpec.describe ProductInventory, type: :model do
+require "rails_helper"
+
+RSpec.describe ProductInventory do
   describe "Associations" do
     it { is_expected.to belong_to(:product) }
   end
@@ -9,6 +11,6 @@ RSpec.describe ProductInventory, type: :model do
     subject { build :product_inventory }
 
     it { is_expected.to validate_presence_of(:quantity) }
-    it { is_expected.to validate_uniqueness_of(:product_id).scoped_to([:size, :color]) }
+    it { is_expected.to validate_uniqueness_of(:product_id).scoped_to(%i[size color]) }
   end
 end

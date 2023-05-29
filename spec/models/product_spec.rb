@@ -1,6 +1,8 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
-RSpec.describe Product, type: :model do
+require "rails_helper"
+
+RSpec.describe Product do
   describe "Associations" do
     it { is_expected.to have_many(:product_inventories).dependent(:destroy) }
   end
@@ -10,11 +12,7 @@ RSpec.describe Product, type: :model do
 
     it do
       is_expected.to define_enum_for(:category).with_values(
-        {
-          accessories: "accessories",
-          shoes: "shoes",
-          top: "top",
-        }
+        { accessories: "accessories", shoes: "shoes", top: "top" }
       ).backed_by_column_of_type(:string)
     end
 

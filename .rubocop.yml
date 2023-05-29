@@ -13,7 +13,6 @@ inherit_from:
   - .rubocop_rspec_enable.yml
   - .rubocop_rspec_disable.yml
 
-
 require:
   - rubocop-capybara
   - rubocop-performance
@@ -168,14 +167,6 @@ AllCops:
   # rubocop is run. Keys are the name of the extension, and values are an array
   # of gems in the Gemfile that the extension is suggested for, if not already
   # included.
-  SuggestExtensions:
-    rubocop-rails: [rails]
-    rubocop-rspec: [rspec, rspec-rails]
-    rubocop-minitest: [minitest]
-    rubocop-sequel: [sequel]
-    rubocop-rake: [rake]
-    rubocop-graphql: [graphql]
-    rubocop-capybara: [capybara]
-    rubocop-factory_bot: [factory_bot, factory_bot_rails]
+  SuggestExtensions: false
   # Enable/Disable checking the methods extended by Active Support.
   ActiveSupportExtensionsEnabled: false
