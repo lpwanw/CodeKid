@@ -22,6 +22,7 @@ gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
+  gem "brakeman"
   gem "rubocop", "~> 1.51", require: false
   gem "rubocop-capybara", require: false
   gem "rubocop-rails", require: false
@@ -30,6 +31,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "bullet"
   gem "web-console"
 end
 
