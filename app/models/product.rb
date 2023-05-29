@@ -9,6 +9,11 @@ class Product < ApplicationRecord
     top: "top"
   }
 
+  enum gender: {
+    male: "male",
+    female: "female"
+  }
+
   validates :name, presence: true
 
   validates :uid, presence: true
@@ -18,4 +23,6 @@ class Product < ApplicationRecord
 
   validates :category, presence: true
   validates :category, inclusion: { in: Product.categories.keys }
+
+  validates :gender, inclusion: { in: Product.genders.keys }, allow_nil: true
 end

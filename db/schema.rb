@@ -36,6 +36,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_29_082819) do
     t.string "style"
     t.string "line"
     t.string "collection"
+    t.string "gender"
     t.index ["uid"], name: "index_products_on_uid", unique: true
   end
 
