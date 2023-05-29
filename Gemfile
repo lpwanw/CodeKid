@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.0"
 
+gem "acts-as-taggable-on", "~> 9.0"
 gem "bootsnap", require: false
 gem "dotenv-rails"
 gem "importmap-rails"
