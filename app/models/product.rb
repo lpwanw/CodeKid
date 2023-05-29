@@ -1,4 +1,6 @@
 class Product < ApplicationRecord
+  has_many :product_inventories, dependent: :destroy
+
   enum category: {
     accessories: "accessories",
     shoes: "shoes",

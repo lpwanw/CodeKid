@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
+  describe "Associations" do
+    it { is_expected.to have_many(:product_inventories).dependent(:destroy) }
+  end
+
   describe "Validations" do
     subject { build :product }
 
