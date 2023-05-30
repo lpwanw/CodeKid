@@ -8,6 +8,7 @@ ruby "3.2.0"
 gem "acts-as-taggable-on", "~> 9.0"
 gem "bootsnap", require: false
 gem "dotenv-rails"
+gem "font-awesome-sass", "~> 6.4.0"
 gem "importmap-rails"
 gem "jbuilder"
 gem "pg", "~> 1.1"
