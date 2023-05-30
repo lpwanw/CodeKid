@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  devise_for :users
   root "root#index"
+
+  devise_for :users
+
+  resources :users, only: [] do
+    collection do
+      get :me
+    end
+  end
 end

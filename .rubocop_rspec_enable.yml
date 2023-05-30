@@ -420,7 +420,7 @@ RSpec/FilePath:
     RuboCop: rubocop
     RSpec: rspec
   IgnoreMethods: false
-  SpecSuffixOnly: false
+  SpecSuffixOnly: true
   VersionAdded: '1.2'
   VersionChanged: '1.40'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FilePath

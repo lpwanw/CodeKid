@@ -48,6 +48,7 @@ end
 group :test do
   gem "capybara"
   gem "database_cleaner-active_record"
+  gem "rails-controller-testing"
   gem "selenium-webdriver"
   gem "shoulda-matchers", "~> 5.0"
   gem "webdrivers"
