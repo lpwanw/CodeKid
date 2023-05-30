@@ -11,18 +11,14 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body data-controller="body">
     <!--Header-->
-    <div>
-
-    </div>
+    <%= render Header.new %>
     <!--Main-->
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
     <!--Footer-->
-    <div>
-
-    </div>
+    <%= render Footer.new %>
   </body>
 </html>
