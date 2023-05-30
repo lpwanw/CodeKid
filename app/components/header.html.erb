@@ -21,7 +21,11 @@
         <!-- Check if user is signed in -->
         <!-- If not signed in, show Sign In link -->
         <!-- Otherwise, show user-specific content -->
-        <a href="#" class="text-gray-600 hover:text-gray-800 ml-4">Sign In</a>
+        <% if user_signed_in? %>
+
+        <% else %>
+          <%= link_to "Sign In", :new_user_session, class: "text-gray-600 hover:text-gray-800 ml-4" %>
+        <% end %>
       </div>
     </div>
   </div>
