@@ -21,6 +21,7 @@ gem "stimulus-rails"
 gem "tailwindcss-rails"
 gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
+gem "view_component"
 
 group :development, :test do
   gem "brakeman"
